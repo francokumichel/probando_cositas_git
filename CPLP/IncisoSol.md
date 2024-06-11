@@ -18,6 +18,11 @@ Si pasas un objeto (es decir, un valor no primitivo, como Array o un objeto defi
 También permite subprogramas como parámetros. 
 
 ### Python
+Modo IN: Pasaje por valor para tipos inmutables (int, float, str,
+etc.) y pasaje por referencia para tipos mutables (listas,
+diccionarios, etc.).
+Modo OUT: No tiene un modo OUT explícito.
+Modo IN/OUT: Pasaje por referencia para objetos mutables
 
 ##### Bibliografia
 https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Functions
