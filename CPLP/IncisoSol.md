@@ -15,6 +15,23 @@ console.log('El número dentro de la funcion es: ', numero);
 
 Si pasas un objeto (es decir, un valor no primitivo, como Array o un objeto definido por el usuario) como parámetro y la función cambia las propiedades del objeto, ese cambio es visible fuera de la función. 
 
+Los objetos pueden tener sus propiedades modificadas a través de referencias pasadas a funciones, pero reasignar las referencias dentro de las funciones no afecta las referencias originales fuera de las funciones.
+
+```javascript
+let discovery: ['Harder', 'Better', 'Faster'];
+
+function cambio(param1){
+    param1.push('Stronger');
+    console.log(param1, discovery); //['Harder', 'Better', 'Faster', 'Stronger']
+    param1 = 10; 
+    console.log(param1, discovery); //10 ['Harder', 'Better', 'Faster', 'Stronger']
+}
+
+cambio(discovery);
+console.log(discovery); //['Harder', 'Better', 'Faster', 'Stronger']
+```
+
+
 También permite subprogramas como parámetros. 
 
 ### Python
