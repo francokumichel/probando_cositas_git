@@ -10,3 +10,15 @@ let o = {
 } 
 funcion1(v, o);
 console.log(v, o);
+
+console.log("---------------- Similación por nombre ------------");
+let album = {
+    nombre: "Homework",
+    lanzamiento: 1997,
+    cantidad: 16
+}
+
+function functionNombre({cantidad, lanzamiento, nombre}) {
+    console.log("Simulando la funcion", lanzamiento, nombre, cantidad);    
+}
+functionNombre(album);
